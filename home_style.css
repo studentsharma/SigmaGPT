@@ -125,7 +125,8 @@ a {
 }
 
 #FaQ {
-    height: 500px;
+    /* height: 500px; */
+    height: auto;
     width: 800px;
     margin-left: 350px;
     position: relative;
@@ -191,4 +192,5 @@ footer {
     height: 700px;
     width: 100vw;
     background-color: rgb(26, 24, 24);
+    margin-top: 150px;
 }
