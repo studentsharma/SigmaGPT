@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-bar">
+            <div class="nav-left">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-center">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="#FaQ">FaQ</a>
+                <a href="">Developers</a>
+            </div>
+            <div class="nav-right">
+                <a href="login.html">
+                    <div class="login">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Login</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="introduction">
+        <div class="date">
+            <p>July 9,2024</p>
+        </div>
+        <div class="Sigma">
+            <p>Introduction to SigmaGPT</p>
+        </div>
+        <div class="links">
+            <a href="#">
+                <div class="gpt">
+                    <p>Try SigmaGPT</p>
+                    <div class="arrow">
+                        <svg width="0.625rem" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 9L9 1M9 1H2.5M9 1V7.22222" stroke="currentColor" stroke-width="1.25"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="gpt-plus">
+                    <p>Read about SigmaGPT Plus </p>
+                    <div class="arrow">
+                        <svg width="0.625rem" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 9L9 1M9 1H2.5M9 1V7.22222" stroke="currentColor" stroke-width="1.25"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="image"></div>
+    <div class="main-footer">
+        <div id="FaQ">
+            <h1>Frequently Asked Questions</h1>
+            <div class="question">
+                <div class="ques">
+                    <p>Q) Is SigmaGPT free to use ?</p>
+                    <div class="upper-arrow">
+                        <button><i class="fa-solid fa-arrow-up-long"></i></button>
+                    </div>
+                </div>
+                <div class="answer" id="ans">
+                    <p>A) Absolutely. SigmaGPT is free to use for everyone</p>
+                </div>
+            </div>
+            <div class="question">
+                <div class="ques">
+                    <p>Q) write question ?</p>
+                    <div class="upper-arrow">
+                        <button><i class="fa-solid fa-arrow-up-long"></i></button>
+                    </div>
+                </div>
+                <div class="answer">
+                    <p>A) writer answer</p>
+                </div>
+            </div>
+            <div class="question">
+                <div class="ques">
+                    <p>Q) write question ?</p>
+                    <div class="upper-arrow">
+                        <button><i class="fa-solid fa-arrow-up-long"></i></button>
+                    </div>
+                </div>
+                <div class="answer">
+                    <p>A) writer answer</p>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+
+    <script>
+
+        const element = document.querySelectorAll(".question");
+        element.forEach(e => {
+            const icon = e.querySelector(".upper-arrow");
+            const answer = e.querySelector(".answer");
+            icon.addEventListener('click', () => {
+                if (answer.style.display == "none" || answer.style.display == "") {
+                    answer.style.display = "flex";
+                } else {
+                    answer.style.display = "none";
+                }
+                icon.classList.toggle('rotated');
+            })
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+}
+
+.nav-left {
+    width: 25vw;
+}
+
+.nav-center {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.nav-center a {
+    padding: 20px;
+}
+
+.nav-right {
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.login {
+    font-size: 1.1rem;
+    height: 40px;
+    width: 100px;
+    margin: 0px 20px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border-radius: 40px;
+}
+
+.nav-right span {
+    margin-left: 10px;
+}
+
+.introduction {
+    height: 200px;
+    width: 1000px;
+    margin: 100px 0px 0px 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Sigma {
+    font-size: 5rem;
+    text-decoration: solid;
+    padding-bottom: 20px;
+}
+
+.links {
+    display: flex;
+}
+
+.gpt {
+    font-size: 1.1rem;
+    height: 40px;
+    width: 170px;
+    margin: 0px 20px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    border-radius: 40px;
+}
+
+.gpt-plus {
+    font-size: 1.2rem;
+    height: 40px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.arrow {
+    margin-left: 10px;
+}
+
+.gpt:hover {
+    background-color: rgb(76, 72, 72);
+}
+
+.gpt-plus:hover {
+    border-bottom: 1px solid black;
+}
+
+.image {
+    height: 500px;
+    width: 1000px;
+    margin-left: 255px;
+    margin-bottom: 50px;
+    background-image: url("assests/body-background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#FaQ {
+    height: 500px;
+    width: 800px;
+    margin-left: 350px;
+    position: relative;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question .ques {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    border: 2px solid black;
+    height: 80px;
+    border-radius: 40px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.question p {
+    width: 95%;
+    font-size: 1.3rem;
+}
+
+.answer {
+    color: white;
+    background-color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    border: 2px solid black;
+    height: 80px;
+    border-radius: 40px;
+    display: none;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    height: 25px;
+    width: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+h1 {
+    margin: 20px;
+}
+
+.upper-arrow {
+    transition: transform 0.3s ease;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+footer {
+    height: 700px;
+    width: 100vw;
+    background-color: rgb(26, 24, 24);
+}
